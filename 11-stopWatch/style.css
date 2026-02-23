@@ -1,0 +1,80 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Background */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Main Container */
+.Stopwatch {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 40px 60px;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: white;
+}
+
+/* Time Display */
+#stop {
+    font-size: 60px;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Buttons Container */
+.buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Buttons */
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+/* Individual Button Colors */
+button:nth-child(1) {
+    background: #00c853;
+    color: white;
+}
+
+button:nth-child(2) {
+    background: #d50000;
+    color: white;
+}
+
+button:nth-child(3) {
+    background: #2962ff;
+    color: white;
+}
+
+/* Hover Effects */
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Button Click Effect */
+button:active {
+    transform: scale(0.95);
+}
