@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(7, 33, 83);
+    height: 100vh;
+    width: 100%;
+}
+.input-box{
+       background: white;
+       width: 350px;
+    display: flex;
+       align-items: center;
+       justify-content: space-between;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+       padding: 3px 15px;
+}
+.input-box input{
+    padding: 15px 0;
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+}
+.input-box img{
+    width: 50px;
+    cursor: pointer;
+}
