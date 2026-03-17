@@ -1,0 +1,11 @@
+const date=document.getElementById("date");
+const day=document.getElementById("day");
+const month=document.getElementById("month");
+const year=document.getElementById("Year");
+const calendar= new Date();
+const days=["Sun", "Mo", "Tue","Wedne", "Thur", "Fr", "Satu"];
+const months=["Jan", "Feb","Mar", "Apr","May","Jun","Jul","Aug","Sep", "Oct","Nov","Dec"];
+date.innerHTML= (calendar.getDate()<10?"0":"") + calendar.getDate();
+day.innerHTML=days[calendar.getDay()];
+month.innerHTML=months[calendar.getMonth()];
+year.innerHTML=calendar.getFullYear();
