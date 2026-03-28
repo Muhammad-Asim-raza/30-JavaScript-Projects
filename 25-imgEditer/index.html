@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelCraft • Image Editor</title>
+    <script src="https://kit.fontawesome.com/e2c231ac74.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <span>PixelCraft</span>
+            </div>
+            <div class="header-actions">
+                <label class="btn primary" for="canvas-input">
+                    <i class="fa-solid fa-upload"></i>
+                    Upload Image
+                </label>
+                <button class="btn secondary reset-btn">Reset</button>
+                <button class="btn accent download-btn">Export</button>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <!-- Canvas Area -->
+            <div class="canvas-panel">
+                <div class="canvas-wrapper">
+                    <div class="placeholder image">
+                        <i class="fa-solid fa-image"></i>
+                        <h3>No image selected</h3>
+                        <p>Upload an image to start editing</p>
+                    </div>
+                    <canvas class="image-container"></canvas>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="sidebar-header">
+                    <h2>Adjustments</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="filters"></div>
+            </div>
+        </div>
+    </div>
+
+    <input type="file" id="canvas-input" accept="image/*" hidden>
+    <script src="script.js"></script>
+</body>
+</html>
