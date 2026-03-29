@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100vh;
+    background-color: #111111;
+    color: rgb(206, 209, 211);
+}
+main section {
+    width: 90%;
+    height: 100vh;
+    background-color: #222222;
+    border-radius: 10px;
+    margin: auto;
+}
+main section .infos{
+    display: flex;
+    height: 13.5vh;
+    justify-content: space-between;
+    align-items: center;
+     padding: 20px 15px 20px 15px;
+     border-bottom: 2px solid #a49f9f;
+}
+.broke{
+   background-color: #620a0a;
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+   grid-template-rows: repeat(auto-fill, minmax(30px, 1fr));
+   height: 86.5%;
+   width: 100%;
+}
+.block{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #a49f9f;
+}
+.snake{
+    background-color: #0a620a;
+}
+.food {
+    background-color: red;
+}
